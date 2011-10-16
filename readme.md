@@ -32,4 +32,9 @@ Now that that's out of the way, you use it like this:
 Wasn't that easy? I'd suggest smoothness between 12 and 20 for anything remotely low-key. The colour is taken from the div's background-color CSS. This does not support background-image, and probably won't unless someone asks me.
 Also noisify only works with `document.getElementById('myId')`, not with jQuery's `$('#myId')`.
 
+This only works in browsers that support the canvas element, and preferably ones that have javascript engines that, you know, work.
+This means that noisify.js *won't* work in IE 7,8 or earlier, but has a good chance of working on iOS.
+
+Maybe someday I'll do some benchmarks as to how much slower or faster this is in comparison to loading an actual image.
+
 We good? Good! [Tweet at me!](http://twitter.com/csl_)
